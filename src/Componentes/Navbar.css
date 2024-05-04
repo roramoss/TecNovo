@@ -1,0 +1,16 @@
+.navnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #000000;
+    color: aliceblue;
+  } 
+  .btn-iniciar{
+    text-decoration: none;
+    display: flex;
+    color: aliceblue;
+    margin: 12px;
+  }
+  .navnav{ color: aliceblue;}
+  
