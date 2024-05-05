@@ -1,15 +1,22 @@
-import { useState } from 'react'
+
 import './App.css'
 import Nav from './Componentes/Navbar1'
+import Primera from './Componentes/PrimeraSeccion/seccion1'
+import Segunda from './Componentes/SegundaSeccion/seccion2'
+import Tercera from './Componentes/Terceraseccion/seccion3'
+
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
     <Nav/>
-      
+    <Segunda/>
+      <Primera/>
+    
+    <Tercera/>
     </>
   )
 }
