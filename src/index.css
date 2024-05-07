@@ -115,3 +115,12 @@ button:focus {
 .produ2{
   background-color: white;
 }
+
+
+
+.seccioncuatro{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}

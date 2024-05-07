@@ -1,5 +1,8 @@
 
 import './App.css'
+import Cuarta from './Componentes/CuartaSeccion/Cuartaseccion'
+import Footer from './Componentes/Footer/Footer'
+import Inicio from './Componentes/Inicio/inicio'
 import Nav from './Componentes/Navbar1'
 import Primera from './Componentes/PrimeraSeccion/seccion1'
 import Segunda from './Componentes/SegundaSeccion/seccion2'
@@ -17,6 +20,11 @@ function App() {
       <Primera/>
     
     <Tercera/>
+    <Cuarta/>
+    <Footer/>
+
+
+    <Inicio/>
     </>
   )
 }

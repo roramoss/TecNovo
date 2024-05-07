@@ -59,7 +59,9 @@ function  Tercera () {
       </Card>
     </CardGroup>
     <br />
-
+    <div className='produ1'>
+        <h1 >Lo mas vendido</h1>
+        </div>
     <CardGroup>
       <Card>
         <Card.Img variant="top" src="src/assets/destacados4.png" />
