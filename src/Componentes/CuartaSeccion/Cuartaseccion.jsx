@@ -18,7 +18,9 @@ const Cuarta = () => {
 
           </div>
           <h3>Preguntas Frecuentes</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Ingresá para encontrar más
+información sobre productos y
+métodos de entrega.</p>
         </Col>
         <Col xs={12} md={6} lg={3} className="text-center mb-4">
           <div>
@@ -28,7 +30,9 @@ const Cuarta = () => {
          
           </div>
           <h3>Soporte por llamada</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>El Call Center está disponible:
+días hábiles de 9 a 20hs. y
+sábados y domingos de 9 a 15 hs</p>
         </Col>
         <Col xs={12} md={6} lg={3} className="text-center mb-4">
           <div>
@@ -39,7 +43,9 @@ const Cuarta = () => {
          
           </div>
           <h3>Soporte por Online</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Chateá con un operador:
+días hábiles de 9 a 20hs. y
+sábados y domingos de 9 a 15hs</p>
         </Col>
         <Col xs={12} md={6} lg={3} className="text-center mb-4">
           <div>
@@ -50,7 +56,11 @@ const Cuarta = () => {
           
           </div>
           <h3>Soporte por email</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Te respondemos dentro de
+las siguientes 24 horas hábiles.
+
+Envianos un email a
+consultas@TecNovo.com</p>
         </Col>
       </Row>
     </Container>
