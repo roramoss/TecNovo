@@ -13,8 +13,8 @@ function Nav() {
               alt="React Bootstrap logo"
             />
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Registro</a></li>
+        <li><a href="/Login">Iniciar Sesion</a></li>
+        <li><a href="/Registro">Registro</a></li>
       
       </ul>
     </div>

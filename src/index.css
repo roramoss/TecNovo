@@ -68,7 +68,7 @@ padding: 20px;
   display: block;
 }
 
-button {
+ button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -77,7 +77,7 @@ button {
   border: none;
   cursor: pointer;
   padding: 10px;
-}
+} 
 
 .prev {
   left: 0;
@@ -88,7 +88,7 @@ button {
 }
 
 /* Estilos adicionales para los botones */
-button:hover {
+ button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -101,14 +101,14 @@ button:focus {
     font-size: 14px;
     padding: 8px;
   }
-}
+} 
 
 /* seccion 3 */
 .produ1{
  display: flex;
  justify-content: center;
   margin: 0px;
-  font-family: cursive;
+  /* font-family: cursive; */
   color: rgb(0, 0, 0);
   background-color: white;
 }
@@ -124,3 +124,9 @@ button:focus {
   justify-content: space-around;
 
 }
+
+
+
+/* Css del inicio */
+
+
