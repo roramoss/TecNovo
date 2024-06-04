@@ -4,6 +4,8 @@ import Primera from "../PrimeraSeccion/seccion1";
 import Tercera from "../Terceraseccion/seccion3";
 import Cuarta from "../CuartaSeccion/Cuartaseccion";
 import Footer from "../Footer/Footer";
+import './primeravista.css'
+import DefaultLayout from "../../layout/DefaultLayouth";
 
 
 
@@ -13,7 +15,8 @@ function Primeravista() {
 
     return (
       <>
-      <Nav/>
+      <DefaultLayout>
+
       <Segunda/>
       <br />
         <Primera/>
@@ -23,6 +26,9 @@ function Primeravista() {
       <Cuarta/>
       <br />
       <Footer/>
+
+      </DefaultLayout>
+      
   
   
       
