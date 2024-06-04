@@ -1,0 +1,60 @@
+.link{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+ justify-content: space-evenly;
+   
+    width: 100%;
+    
+   
+    
+
+}
+.link a {
+    text-decoration: none;
+    color: aliceblue;
+    margin: 24px;
+}
+
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 0; /* Establece el margen en 0 */
+    overflow: hidden;
+  }
+  
+  .carousel-images {
+    display: flex;
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    display: block;
+  }
+  
+   button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }  
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+
+ .linkkk{
+    text-decoration: none;
+    color: black;
+    
+    
+ }
+  

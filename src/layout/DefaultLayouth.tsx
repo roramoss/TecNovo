@@ -1,3 +1,7 @@
+
+// aca vendria estar el navbar que pongo una etiqueta en cata vista y el contenido de cada vista  va adentro de la etiqueta
+
+
 import React from "react";
 import { Link } from "react-router-dom";
 // import { Children } from "react";
