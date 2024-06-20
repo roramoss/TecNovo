@@ -1,11 +1,26 @@
-
-import React from 'react'
+import { useAuth } from '../../auth/authProvider'
+import { Navigate } from 'react-router-dom'
+import React, { useState } from 'react'
 import DefaultLayout from '../../layout/DefaultLayouth'
 import './registro.css'
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const Registro = () => {
+
+const [name, setname] = useState("");
+const [email, setEmail] = useState("");
+const [Password, setPassword] = useState("");
+
+const auth = useAuth();
+
+if(auth.isAuthenticated){
+  return <Navigate to="/principal"/>
+};
+
+
+
+
   return (
 
 
@@ -22,7 +37,9 @@ const Registro = () => {
         <div className='input-contenedor'>
 
         <label htmlFor="">Nombre</label>
-        <input type="text" />
+        <input type="text" value={name}
+        onChange={(e) => setname(e.target.value)}
+        />
         <br />
 
         </div>
@@ -33,7 +50,9 @@ const Registro = () => {
         <div className='input-contenedor' >
 
         <label htmlFor="">Email</label>
-        <input type="email" />
+        <input type="email"  value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        />
         <br />
 
         </div>
@@ -42,7 +61,9 @@ const Registro = () => {
         <div className='input-contenedor' >
 
         <label htmlFor="">Contraseña</label>
-        <input type="password" />
+        <input type="password" value={Password}
+        onChange={(e) => setPassword(e.target.value)}
+        />
         </div>
         <br />
 
@@ -50,7 +71,7 @@ const Registro = () => {
 
 
 
-       <a href="http://" className='inicioo'>Iniciar sesion</a>
+       <a href="" className='inicioo'>Iniciar sesion</a>
 
 
 

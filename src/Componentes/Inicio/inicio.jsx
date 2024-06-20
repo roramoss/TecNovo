@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import DefaultLayout from '../../layout/DefaultLayouth'
 import './inicio.css'
-import Nav from '../Navbar1'
+import { useAuth } from '../../auth/authProvider'
+import { Navigate } from 'react-router-dom'
+
 import { Container } from 'react-bootstrap'
 
 
@@ -9,6 +11,18 @@ import { Container } from 'react-bootstrap'
 
 
 const Inicio = () => {
+
+const [username, setUsername] = useState ("");
+const [password, setPassword] = useState ("");
+
+const auth = useAuth();
+
+if(auth.isAuthenticated){
+  return <Navigate to="/principal"/>
+};
+
+
+
   return (
 
 
@@ -28,8 +42,10 @@ const Inicio = () => {
 
 
         <div className='input-contenedor'>
-        <label htmlFor="">Nombre</label>
-        <input type="text" />
+        <label htmlFor="">Nombre de Usuario</label>
+        <input type="text"  value={username}
+        onChange={(e) => setUsername(e.target.value)}
+        />
 
         </div>
 
@@ -38,7 +54,9 @@ const Inicio = () => {
         <div className=' input-contenedor'>
 
         <label htmlFor="">Contraseña</label>
-        <input type="password" />
+        <input type="password"  value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        />
 
         </div>
         <br />
