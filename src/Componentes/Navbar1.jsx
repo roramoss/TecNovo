@@ -13,13 +13,13 @@ function Nav() {
               width="90"
               height="90"
               className="d-inline-block align-top"
-              alt="React Bootstrap logo"
+              alt=" logo"
            
              
             />
       <ul>
-        <li><a href="/Login">Iniciar Sesion</a></li>
-        <li><a href="/Registro">Registro</a></li>
+        <li><a href="/Login">Cerrar Sesion</a></li>
+       
       
       </ul>
     

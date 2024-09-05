@@ -11,8 +11,11 @@ const AuthContext = createContext({
     isAuthenticated: false,
 });
 
+//Componente que esta validando constantemente si existe autenticacion o no para dejar pasar a la ruta que estan protegidas, podra acceder de nuestro usuario de la informacion que mandemos del back al fron
 export function AuthProvider({ children }: AuthProviderProps) {
-    const [isAuthenticated, setIsAuthenticated] = useState(true);
+    const [isAuthenticated, setIsAuthenticated] = useState(true
+        
+    );
 
     return (
         <AuthContext.Provider value={{ isAuthenticated }}>

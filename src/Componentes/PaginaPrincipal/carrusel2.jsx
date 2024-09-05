@@ -2,14 +2,13 @@ import React, { useState, useEffect } from 'react';
 import './principal.css'
 
 
-const Carruselprincipal = () => {
+const Carrusel2 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    'src/assets/tarjetas.jpg',
-    'src/assets/Banner-WEB-2do-scroll-SANTANDER.jpg',
-    'src/assets/MACRO.jpg',
-    
+    'src/assets/promo1.webp',
+    'src/assets/promo2.webp',
+    'src/assets/promo3.webp',
   ];
 
   const nextImage = () => {
@@ -48,4 +47,4 @@ const Carruselprincipal = () => {
   );
 };
 
-export default  Carruselprincipal;
+export default  Carrusel2;

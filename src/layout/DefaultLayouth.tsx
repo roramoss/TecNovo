@@ -1,5 +1,5 @@
 
-// aca vendria estar el navbar que pongo una etiqueta en cata vista y el contenido de cada vista  va adentro de la etiqueta
+// aca vendria estar el navbar que pongo una etiqueta en cada vista y el contenido de cada vista  va adentro de la etiqueta
 
 
 import React from "react";
