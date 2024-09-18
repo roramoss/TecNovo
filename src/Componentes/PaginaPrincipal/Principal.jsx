@@ -11,7 +11,7 @@ import Telefono2 from '../Modals/modaltelefono2'
 import Tablet from '../Modals/modaltable'
 import Telefono3 from '../Modals/modaltelefono3'
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Card, Button, } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, CardFooter, } from 'react-bootstrap';
 import Probando11 from '../ModalCompra/CarritoCompra1'
 import CustomModal from '../Modals/modal';
 import Tele1 from '../Modals/modaltele1'
@@ -23,111 +23,34 @@ import Monitor2 from '../Modals/modalmonitor2'
 import Compu3 from '../Modals/motalmonitos'
 import Nav from '../Navbar1'
 import Carrusel2 from './carrusel2'
+import Carrito from './Carrito/carrito.jsx'
+import { data } from './Carrito/carrito.js'
+import Cuarta from '../CuartaSeccion/Cuartaseccion.jsx'
+
 const Principal = () => {
 
  
 
 
   return (
+
 <>
 
 
-<Nav/>
+<Carrito/>
+<Carrusel2/>
+   
+
+<Cuarta/>
 
 
- <section>
-<div className='link'>
-  <a href="#Moviles"  className="">Moviles</a>
-  <a href="#Computadoras" className="">Computadoras</a>
-  <a href="#Televisores" className="">Televisores</a>
-  <a href="#electrodomesticos" className="" >Electrodomesticos</a>
-</div>
 
-</section> 
+    <Footer/>
 
-<section>
-< Carruselprincipal/>
-</section>
+
 
 <section className="py-5" id='electrodomesticos' >
-      <Container>
-        <h2 className="text-center mb-4" >Electrodomesticos</h2>
-        <Row xs={1} md={2} lg={4} className="g-4">
-          <Col>
-            <Card className="h-100">
-              <Card.Img variant="top" src="src/assets/heladera2.avif" />
-              <Card.Body>
-                <Card.Title>
-
-                  <Heladera1/>
-                Heladera Bespoke Side By Side 626L <br />
-                $3,000,000.00
-               
-                </Card.Title>
-                <Card.Footer>
-                  
-                  <Probando11/>
-                 
-                
-   
-                </Card.Footer>
-                
-                
-              </Card.Body>
-            
-
-            </Card>
-          </Col>
-          <Col>
-            <Card className="h-100">
-              <Card.Img variant="top" src="src/assets/labaropas2.webp" />
-              <Card.Body>
-                <Card.Title>
-                  <Modallabarropas/>
-
-                Lavasecarropas 9,5kg con Ecobubble™ WD4000T <br />
-                $ 1,556,999.00
-                </Card.Title>
-                <Link className='link2' >Comprar ahora</Link>
-              </Card.Body>
-              
-            </Card>
-          </Col>
-          <Col>
-            <Card className="h-100">
-              <Card.Img variant="top" src="src/assets/heladera3.avif" />
-              <Card.Body>
-                <Card.Title>
-
-                  <Heladera2/>
-                  
-                Heladera freezer superior No Frost inoxidable 382 litros <br />
-                $ 1,592,999.00
-
-
-                </Card.Title>
-                <Link className='link2' >Comprar ahora</Link>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="h-100">
-              <Card.Img variant="top" src="src/assets/labaropas3.webp" />
-              <Card.Body>
-                <Card.Title>
-                  <Labarropas2/>
-                Lavasecarropas 9.5Kg con control IA y Ecobubble White <br />
-                $1,300,000.00
-                </Card.Title>
-                <Link className='link2' >Comprar ahora</Link>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
     </section>
-
-
 
 
     <section className="py-5" id='Moviles' >
@@ -333,15 +256,7 @@ const Principal = () => {
     </section>
 
 
-    <section>
-      <Carrusel2/>
-    </section>
-
-
-
-
-
-    <Footer/>
+  
 
 
 </>

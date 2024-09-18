@@ -1,6 +1,10 @@
+
+
+
 .navbar {
   width: 100%;
-  background-color: #000000;
+  background-color: rgb(0, 0, 0);
+  border: solid 3px;
  
 }
 
@@ -25,12 +29,14 @@
 
 .navbar li a:hover {
   background-color: #000000;
-}
+} 
 
 
 
 
 
-/* Css del inicio */
 
 
+ 
+
+ 

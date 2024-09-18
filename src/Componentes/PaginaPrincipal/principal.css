@@ -1,4 +1,265 @@
-.link{
+
+.icon-cart {
+	width: 80px;
+	height: 60px;
+	stroke: #f0f0f0;
+}
+
+.icon-cart:hover {
+	cursor: pointer;
+}
+
+img {
+	max-width: 90%;
+}
+
+
+
+
+.container-icon {
+	position: relative;
+}
+
+.count-products {
+	position: absolute;
+	top: 55%;
+	right: 0;
+
+	background-color: #ffffff;
+	color: #000000;
+	width: 30px;
+	height: 30px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+#contador-productos {
+	font-size: 12px;
+}
+
+.container-cart-products {
+	position: absolute;
+	top: 90px;
+	right: 0;
+	background-color: #d3cccc;
+	width: 500px;
+	z-index: 3;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.cart-product {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 28px;
+	border-bottom: 1px solid rgba(240, 231, 231, 0.2);
+}
+
+.info-cart-product {
+	display: flex;
+	justify-content: space-between;
+	flex: 1.3;
+}
+
+.titulo-producto-carrito {
+	font-size: 20px;
+}
+
+.precio-producto-carrito {
+	font-weight: 800;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+.cantidad-producto-carrito {
+	font-weight: 800;
+	font-size: 20px;
+  margin-right: 10px;
+}
+
+.icon-close {
+	width: 20px;
+	height: 20px;
+}
+
+.icon-close:hover {
+	stroke: red;
+	cursor: pointer;
+}
+
+.cart-total {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+	gap: 20px;
+}
+
+.cart-total h3 {
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.total-pagar {
+	font-size: 20px;
+	font-weight: 900;
+}
+
+.hidden-cart {
+	display: none;
+} */
+
+/* Main  Del Carrito por ende de la pagina principal*/
+* {
+  margin: 0;
+  padding: 0; /* Elimina el padding por defecto */
+  box-sizing: border-box; /* Asegura que el padding y el borde no afecten el tamaño total */
+}
+
+body {
+  background-color: rgb(0, 0, 0); /* Fondo rojo para toda la página */
+  color: rgb(255, 255, 255); /* Color de texto blanco para mejor contraste */
+  line-height: 1.5; /* Mejora la legibilidad del texto */
+}
+
+.container-items {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Tres columnas responsivas */
+  gap: 120px; /* Espacio entre elementos */
+  background: linear-gradient(105deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.8)); /* Gradiente moderno */
+  padding: 40px; /* Espaciado interno */
+}
+
+.container-items > * {
+  position: relative; /* Asegura que el contenido esté por encima del fondo */
+  z-index: 1; /* Coloca el contenido por encima */
+}
+
+
+.item {
+  background-color: white; /* Fondo blanco para cada producto */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Para que el contenido no sobresalga */
+  transition: transform 0.3s; /* Suavizar la animación */
+}
+
+.item:hover {
+  transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+.item img {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Ajusta la imagen para cubrir el espacio */
+  transition: transform 0.5s; /* Animación de escalado más fluida */
+}
+
+.item:hover img {
+  transform: scale(1.1); /* Escalado en hover */
+}
+
+.info-product {
+  padding: 15px; /* Espaciado interno */
+  display: flex;
+  flex-direction: column; /* Asegura que la información esté apilada verticalmente */
+  gap: 10px; /* Espacio entre elementos de información */
+}
+
+.price {
+  font-size: 1.2rem; /* Tamaño de fuente responsivo */
+  font-weight: bold; /* Negrita para destacar el precio */
+  color: rgb(0, 0, 0); /* Color del texto */
+}
+
+.info-product button {
+  background-color: rgb(0, 0, 0); /* Color del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px; /* Espaciado interno del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados para el botón */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  transition: background-color 0.3s; /* Suavizar el cambio de color */
+}
+
+.info-product button:hover {
+  background-color:  #333; /* Color del botón al pasar el ratón */
+}
+
+.cart-empty {
+    padding: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-clear-all {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente responsivo */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Suavizar transición */
+}
+
+.btn-clear-all:hover {
+    background-color: #333;
+}
+
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: 0; 
+  height: 350px;
+  overflow: hidden;
+  
+}
+
+.carousel-images {
+  display: flex;
+}
+
+.carousel-images img {
+  width: 100%;
+  display: block;
+}
+
+    
+ 
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .link{
     background-color: rgb(250, 247, 247);
     display: flex;
  justify-content: space-evenly;
@@ -16,31 +277,7 @@
 }
 
 
-.carousel {
-    position: relative;
-    max-width: 100%;
-    margin: 0; /* Establece el margen en 0 */
-    overflow: hidden;
-  }
-  
-  .carousel-images {
-    display: flex;
-  }
-  
-  .carousel-images img {
-    width: 100%;
-    display: block;
-  }
-  
-      
-   
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
+
 
  .linkkk{
     text-decoration: none;
@@ -51,7 +288,7 @@
 
 
 
- /* electrodomesticos */
+ 
  .seccionelectrodomesticos{
 
   display: flex;
@@ -80,4 +317,5 @@
  .Probandocarrito{
   width: 10px;
   height: 10px;
- }
+ }   */
+ 

@@ -1,6 +1,7 @@
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
-import { Button } from 'react-bootstrap';
+import { CardGroup, Card } from "react-bootstrap";
+
+
+
 
 
 function  Tercera () {
@@ -8,13 +9,10 @@ function  Tercera () {
     return (
 
         <>
-
-        <div className='produ1'>
+        <div className='produ1' >
         <h1 >Productos Destacados</h1>
         </div>
-        
-        
-        <div className='produ2'>
+      
 
 
         <CardGroup>
@@ -24,12 +22,12 @@ function  Tercera () {
           <Card.Title>43" UHD 4K Smart TV AU7000</Card.Title>
           <Card.Text>
            
-                          <ul>
-                            <li>Expandi tu experiencia Smart 4K</li>
-                            <li>Color afinado para una imagen vibrante y realista</li>
-                            <li>Potente Procesador Crystal 4K</li>
+                          
+                            -Expandi tu experiencia Smart 4K <br />
+                            -Color afinado para una imagen vibrante y realista <br />
+                            -Potente Procesador Crystal 4K
               
-                          </ul>
+                          
          
           </Card.Text>
         </Card.Body>
@@ -40,13 +38,13 @@ function  Tercera () {
         <Card.Body>
           <Card.Title>Galaxy S23 ULTRA Cream 256GB</Card.Title>
           <Card.Text>
-          <ul>
-        <li>Fotografia y gaming ultrarapidos</li>
-        <li>Diseñado para vos y el planeta</li>
-        <li>S Pen Incorporado compatible con mas aplicaciones</li>
-        <li> Cuidemos el planeta: No incluye cargador</li>
+          
+       -Fotografia y gaming ultrarapidos
+        -Diseñado para vos y el planeta <br />
+        -S Pen Incorporado compatible con mas aplicaciones <br />
+         -Cuidemos el planeta: No incluye cargador
 
-      </ul>
+      
           </Card.Text>
         </Card.Body>
         
@@ -56,18 +54,18 @@ function  Tercera () {
         <Card.Body>
           <Card.Title>Galaxy S23 FE Cream 128GB</Card.Title>
           <Card.Text>
-           <ul>
-            <li>Camara frontal 10.0MP</li>
-            <li>Camara Trasera 50.0MP + 12.0MP + 8.0MP</li>
-            <li>Memoria interna 128-256</li>
-            <li>Procesador Octa-Core</li>
-           </ul>
+           
+            -Camara frontal 10.0MP <br />
+            -Camara Trasera 50.0MP + 12.0MP + 8.0MP <br />
+            -Memoria interna 128-256
+            Procesador Octa-Core
+           
           </Card.Text>
         </Card.Body>
       
       </Card>
     </CardGroup>
-    <br />
+
     <div className='produ1'>
         <h1 >Lo mas vendido</h1>
         </div>
@@ -77,12 +75,12 @@ function  Tercera () {
         <Card.Body>
           <Card.Title>55" Neo QLED 4K QN85C</Card.Title>
           <Card.Text>
-            <ul>
-              <li>Procesador Neutral Quantum 4K</li>
-              <li> Diseño Neo Slim</li>
-              <li>Tamaño 55"</li>
-              <li>Resolucion 3,840 x 2,160</li>
-            </ul>
+            
+             -Procesador Neutral Quantum 4K <br />
+               -Diseño Neo Slim <br />
+              -Tamaño 55" <br />
+              -Resolucion 3,840 x 2,160
+            
            
           </Card.Text>
         </Card.Body>
@@ -93,12 +91,12 @@ function  Tercera () {
         <Card.Body>
           <Card.Title>Galaxy Z Flip4 Blue 256GB</Card.Title>
           <Card.Text>
-            <ul>
-              <li>Procesador Octa-Core</li>
-              <li>Camara Frontal 10.0MP</li>
-              <li>Carama trasera 12.0 MP + 12.0MP</li>
-              <li>Memoria Interna 128-256</li>
-            </ul>
+            
+              -Procesador Octa-Core <br />
+              -Camara Frontal 10.0MP <br />
+              -Carama trasera 12.0 MP + 12.0MP <br />
+              -Memoria Interna 128-256
+            
           </Card.Text>
         </Card.Body>
       
@@ -108,12 +106,12 @@ function  Tercera () {
         <Card.Body>
           <Card.Title> Galaxy A14 Black</Card.Title>
           <Card.Text>
-            <ul>
-              <li>Procesador 2GHz</li>
-              <li>Camara Frontal 13.0MP</li>
-              <li>Camara Trasera 50.0MP + 5.0 MP + 2.0 MP</li>
-              <li>Memoria Interna 128</li>
-            </ul>
+            
+              -Procesador 2GHz <br />
+              -Camara Frontal 13.0MP <br />
+              -Camara Trasera 50.0MP + 5.0 MP + 2.0 MP <br />
+              -Memoria Interna 128
+            
            
           </Card.Text>
         </Card.Body>
@@ -121,14 +119,6 @@ function  Tercera () {
       </Card>
     </CardGroup>
 
-        </div>
-
-
-
-
-
-        
-        
         </>
     )
 }

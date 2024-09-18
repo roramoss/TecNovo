@@ -30,6 +30,10 @@ function Probando11() {
 
         <img variant="top" src="src/assets/heladera2.avif" />
 
+
+
+        
+
         </Offcanvas.Body>
       </Offcanvas>
     </>

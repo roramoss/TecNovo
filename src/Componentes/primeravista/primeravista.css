@@ -1,84 +1,86 @@
-/* primeras seccion */
-.section {
-    background-color: rgb(255, 255, 255);
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
-    background-position: center; /* Centra la imagen */
-    color: rgb(255, 255, 255); /* Color del texto */
-    padding: 10px; /* Ajusta el espaciado interior de la sección según sea necesario */
-    margin: 0;
+
+.content {
+  background-color: rgb(255, 255, 255);
+  background-size: cover; 
+  background-position: center; 
+  color: rgb(235, 235, 235); 
+  padding: 40px; 
+  margin: 0;
+  display: flex; 
+  flex-direction: row; 
+  border-bottom: 1px solid #aca7a7;
+  justify-content: space-around; 
   
-  }
-  
+}
+
+@media (max-width: 768px) {
   .content {
-    background-color: rgb(255, 255, 255);
-    border: solid gray 1px;
-  padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    max-width: 1300px; /* Ancho máximo del contenido */
-    margin: 0 ; /* Centra el contenido horizontalmente */ }
-  
-  
-  
-  
+      padding: 15px; /* Ajustar padding en pantallas más pequeñas */
+  }
+}
+
   
   /* carrusel  es de la segunda seccion*/
-  
-  .carousel {
+   
+  * {
+    box-sizing: border-box;
+}
+
+.carousel {
     position: relative;
-    max-width: 100%;
-    margin: 0; /* Establece el margen en 0 */
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    height: 75vh; /* Ocupa toda la altura de la ventana */
     overflow: hidden;
-  }
-  
-  .carousel-images {
+    background-color:rgb(255, 255, 255); /* Cambia el color de fondo si lo deseas */
+}
+
+.carousel-images {
     display: flex;
-  }
-  
-  .carousel-images img {
-    width: 100%;
+    transition: transform 0.5s ease; /* Suaviza el movimiento entre imágenes */
+}
+
+.carousel-images img {
+    min-width: 100%; /* Asegura que cada imagen ocupe el 100% del ancho */
+    height: auto; /* Mantiene la proporción de la imagen */
     display: block;
-  }
-  
-   button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-  }   
-  
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
-  
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        height: 60vh; /* Ajusta la altura en pantallas más pequeñas */
+    }
+}
+
+  .prev, .next {
+    position: absolute; /* Posicionamiento absoluto para colocarlos en los extremos */
+    top: 50%; /* Centrado vertical */
+    transform: translateY(-50%); /* Ajustar para centrar */
+    z-index: 10; /* Asegurar que estén encima de las imágenes */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.prev {
+    left: 10px; /* Distancia del borde izquierdo */
+}
+
+.next {
+    right: 10px; /* Distancia del borde derecho */
+}
  
   
   /* seccion 3 */
-  .produ1{
+   .produ1{
    display: flex;
    justify-content: center;
     margin: 0px;
-    /* font-family: cursive; */
+  
     color: rgb(0, 0, 0);
-    background-color: white;
+    background-color: rgb(255, 255, 255);
   }
   .produ2{
     background-color: white;
   }
+   
   
   
-  
-  .seccioncuatro{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  
-  }
