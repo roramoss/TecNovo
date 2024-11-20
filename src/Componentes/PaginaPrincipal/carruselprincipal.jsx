@@ -5,10 +5,10 @@ import './principal.css'
 const Carruselprincipal = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = [
+  const images  = [
     'src/assets/tarjetas.jpg',
-    'src/assets/Banner-WEB-2do-scroll-SANTANDER.jpg',
-    'src/assets/MACRO.jpg',
+    
+    
     
   ];
 

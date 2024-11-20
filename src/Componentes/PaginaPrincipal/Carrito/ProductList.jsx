@@ -38,6 +38,8 @@ if(allProducts.find(item =>item.id ===  product.id)){
 
   return (
     <div className='container-items'>
+			
+
         {data.map(product=>(
 
             <div className='item' key={product.id}>
@@ -47,6 +49,7 @@ if(allProducts.find(item =>item.id ===  product.id)){
                      alt={product.nameProduc} />
                 </figure>
                 <div className='info-product'>
+                    
                     <h2> {product.nameProduc}</h2>
                     <p className='price'>${product.price}</p>
                     <button onClick={() => onAddProducts(product)}>

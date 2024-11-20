@@ -31,7 +31,7 @@ if(auth.isAuthenticated){
 
   <Container className='contenedorformu'>
 
-  <form className='formulariologin'>
+  <form className='formulariologin' >
         <h1 className='inicia'>Registro</h1>
 
         <div className='input-contenedor'>

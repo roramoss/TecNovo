@@ -73,14 +73,40 @@
    .produ1{
    display: flex;
    justify-content: center;
-    margin: 0px;
-  
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+   background-color: white;
+
   }
   .produ2{
     background-color: white;
   }
+  .produ3 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr; /* Coloca los elementos en una sola columna */
+    align-items: center; /* Centra verticalmente */
+    justify-items: center; /* Centra horizontalmente */
+    margin: 0;
+    gap: 220px; /* Espacio entre elementos */
+    background: linear-gradient(105deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)); /* Gradiente moderno */
+    padding: 30px; /* Espaciado interno */
+    color: rgb(5, 5, 5); /* Cambia el color a blanco para mayor contraste */
+    text-align: center; /* Centra el texto */
+    border-radius: 1px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5); /* Sombra para profundidad */
+}
+
+.produ3 h1 {
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    margin: 0; /* Sin margen */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+.produ3 p {
+    font-size: 1.2em; /* Tamaño de fuente para párrafos */
+    max-width: 600px; /* Limita el ancho del texto */
+}
+
    
   
   

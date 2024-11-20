@@ -11,6 +11,8 @@ import Registro from './Componentes/Registro/Registro.jsx';
 import Principal from './Componentes/PaginaPrincipal/Principal.jsx';
 import ProteccionRoute from './Route/Proteccion.jsx';
 import { AuthProvider } from './auth/authProvider.tsx';
+import Carrusel2 from './Componentes/PaginaPrincipal/carrusel2.jsx';
+import Primera from './Componentes/primeravista/PrimeraSeccion/seccion1.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,7 +22,15 @@ const router = createBrowserRouter([
   {
     path : "/Login",
     element : <Inicio/>,
+  },{
+    path : "/promociones",
+  element : <Carrusel2/>
   },
+  {
+    path: "/primeraa",
+    element: <Primera/>
+  },
+  
   {
     path :"/Registro",
     element: <Registro/>,

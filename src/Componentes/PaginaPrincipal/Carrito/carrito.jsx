@@ -3,7 +3,9 @@ import { useState } from 'react';
 import ProductList from './ProductList'
 import CarritoHeader from './Header';
 import Primera from '../../primeravista/PrimeraSeccion/seccion1';
-
+import Carruselprincipal from '../carruselprincipal';
+import Carrusel2 from '../carrusel2';
+import NavigationLinks from '../menunaveg';
 
 
 function Carrito() {
@@ -23,15 +25,10 @@ function Carrito() {
 				countProducts={countProducts}
 				setCountProducts={setCountProducts}
 			/>
+			<NavigationLinks/>
+ 
 
-<Primera/>
-<br /><br />
-			<h1 className='produ1'>Tienda online</h1>
-			
-			<br /><br />
-
-
-			
+<h1 className='produ3'>Tienda online</h1>
 			<ProductList
 				allProducts={allProducts}
 				setAllProducts={setAllProducts}

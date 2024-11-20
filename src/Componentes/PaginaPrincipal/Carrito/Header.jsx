@@ -46,7 +46,10 @@ const CarritoHeader =  ({
 		 alt=" logo"/>
 
 
+
 <div className='container-icon'>
+<li><a href="/">Cerrar Sesion</a></li>
+
 				<div
 					className='container-cart-icon'
 					  onClick={() => setActive(!active)}
@@ -126,6 +129,9 @@ const CarritoHeader =  ({
 
 							<button className='btn-clear-all' onClick={onCleanCart}>
 								Vaciar Carrito
+							</button>
+							<button className='btn-clear-all-comprar' >
+								Comprar ahora
 							</button>
 						</>
 					) : (
